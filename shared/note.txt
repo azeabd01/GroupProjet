@@ -1,0 +1,5 @@
+color : 
+ #B3D8A8  : navbar
+#FBFFE4 : products
+#A3D1C6 : contacts
+#3D8D7A : button
