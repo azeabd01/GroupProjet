@@ -64,10 +64,6 @@ button:hover {
     padding-bottom: 2%;
 }
 
-#adrico{
-    width: 200%;
-}
-
 .icon :hover {
     background-color: #3D8D7A;
 }
@@ -82,7 +78,6 @@ button:hover {
     .maps {
         iframe{
             width: 150%;
-
         }
     }
 }
