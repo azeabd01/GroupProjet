@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background-color: #A3D1C6;
+    color: #fff;
+}
+nav{
+    background:linear-gradient(135deg, #B3D8A8, #A3D1C6);
+    height: 80px;
+    width: 95%;
+    display: flex;
+    position:sticky;
+    z-index: 1000;
+    border-radius: 10px;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 17px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.logo:hover{
+    color: #3D8D7A;
+}
+ul{
+    display: flex;
+    line-height: 80px ;
+    gap: 50px;
+}
+a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+    font-weight:600;
+    letter-spacing: 1px;
+  
+}
+.menu-icon{
+    color: white;
+    display: flex;
+     padding-top: 32px; 
+     margin-left: 100px; 
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+.menu-icon:hover{
+    color: #3D8D7A;
+}
+a.active,a:hover{
+    background: #3D8D7A;
+}
+.landing{
+    background-image: url(/shared/pexels-stywo-1261728.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+.landing-content{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+.landing h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.landing p{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.cta-buttons{
+    display: flex;
+    gap: 20px; 
+    justify-content:center ;
+}
+.cta-button1{
+    background-color: #3D8D7A;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.cta-button2{
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #FF5733;
+}
+.cta-button1:hover{
+    background-color: #3D8D7A;
+}
+.cta-button2:hover{
+    background-color: #FF5733;
+}
+@media (max-width:480px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        background:#B3D8A8 ;
+        overflow: hidden;
+
+    }
+    nav ul li{
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 10px 0;
+    }
+    nav ul li :last-child{
+        border-bottom: none;
+    }
+    .menu-icon{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .landing h1{
+        font-size: 36px;
+    }
+    .landing p{
+        font-size: 18px;
+    }
+   .cta-buttons{
+    flex-direction: column;
+    gap: 10px;
+   }
+
+}
