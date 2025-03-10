@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poxy</title>
+    <link rel="stylesheet" href="navbar.css">
+<body>
+    <nav>
+        <div class="logo"> <h3>Poxy</h3></div>
+        <ul id="menuList">
+            <li><a class="active" href="#">Home</a></li>
+            <li> <a href="#">Products</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Sign up</a></li>
+ 
+        </ul>
+        <div class="menu-icon"><i class="fa-solid fa-bars" onclick="toggleMenu()"></i></div>
+    </nav>
+    <section class="landing">
+        <div class="landing-content">
+            <h1>Welcome to Poxy</h1>
+            <p>Your journey to a better experience starts here.</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button1">Get Started</a>
+                <a href="#" class="cta-button2">Buy Now</a>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "100vh";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    
+    </script>
+    <script src="https://kit.fontawesome.com/5c27f4c4a8.js" crossorigin="anonymous"></script>
+</body>
+</html>
