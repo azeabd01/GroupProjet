@@ -1,67 +1,114 @@
-footer {
+body {
+    padding: 0%;
+    margin: 0%;
     background-color: #A3D1C6;
-    font-weight: bold;
-    padding-top: 1%;
+}
+
+#fot {
+    /* height: 100vh; */
+    background-color: #A3D1C6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
 }
 
 .maps {
-    max-width: 100%;
-    margin:  30px;
+    margin: 0%;
 
-    iframe {    
-        width: 100%;
-        min-height: 300px;
+    iframe {
+        min-width: 100%;
+        min-height: 500px;
     }
 }
 
+.for {
+    align-self: anchor-center;
+}
+
 .footcont {
-    margin: 40px;
-    padding: 20px;
+    margin: 0%;
+    padding: 0%;
 }
 
 .input {
-    height: 22VH;
+    height: 29vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    label {
+        font-weight: bold;
+    }
 }
 
-input,textarea {
-    width: 350px;
-    border: 1px solid #3D8D7A;
+input {
+    margin-bottom: 0px;
+    padding: 0%;
+    width: 360px;
+    height: 30px;
+    border: 2px solid #3D8D7A;
     border-radius: 5px;
     font-size: 12px;
-    padding: 2%;
-    margin-bottom: 2%;
+}
+
+textarea {
+    margin-bottom: 0px;
+    padding: 0%;
+    width: 360px;
+    height: 150px;
+    border: 2px solid #3D8D7A;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 button {
     background-color: #3D8D7A;
     color: white;
-    border: #3D8D7A;
     width: 140px;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 0%;
+    border: 0px;
+    font-weight: 550;
+    margin: 4px;
+
 }
 
 button:hover {
-    background-color: #A3D1C6;
-    border-style: solid;
-    border-color: #3D8D7A;
+    background-color: #B3D8A8;
     color: black;
 }
 
-.adress {
+#adrico {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    gap: 0px;
+}
+
+.adress {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 .icon {
+    align-content: center;
+    height: 40px;
     text-align: center;
-    padding: 5px;
-    padding-bottom: 2%;
+    padding: 0%;
+    padding-bottom: 0%;
+
+    i:before {
+
+        font-weight: 550;
+    }
 }
 
 .icon :hover {
@@ -71,13 +118,27 @@ button:hover {
 
 @media (min-width:480px) {
 
-    #mapfor{
+    #mapfor {
         display: flex;
         justify-content: space-between;
     }
+
     .maps {
-        iframe{
-            width: 150%;
+        iframe {
+            width: 100%;
         }
+    }
+}
+
+@media (min-width : 1200px) {
+    footer{
+        width: 1180px;
+        margin: 0 auto;
+    }
+}
+@media (max-width : 1100px) {
+    footer{
+        width: 90%;
+        margin: 0 auto;
     }
 }
